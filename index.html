@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Baoussar Souhaib</title>
+    <meta name="description" content="Portfolio interactif de L'Artisan, Développeur Fullstack créatif.">
+    <title>Portfolio Cosy Lumineux | Développeur Fullstack</title>
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&family=Anton&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -12,8 +13,8 @@
     <nav class="warm-nav">
         <ul>
             <li><a href="#ancre-home" class="nav-link" id="nav-home">ACCUEIL</a></li>
-            <li><a href="#ancre-about" class="nav-link" id="nav-about">PERSONNAGE</a></li>
-            <li><a href="#ancre-quest1" class="nav-link" id="nav-quests">QUÊTES</a></li>
+            <li><a href="#ancre-about" class="nav-link" id="nav-about">PERSO</a></li>
+            <li><a href="#ancre-board" class="nav-link" id="nav-quests">QUÊTES</a></li>
             <li><a href="#ancre-contact" class="nav-link" id="nav-contact">CONTACT</a></li>
         </ul>
     </nav>
@@ -36,60 +37,79 @@
             <div class="content-wrapper about-bg">
                 <div class="rpg-interface">
                     <div class="char-preview-box">
-                        <h3 class="pixel-label">AVATAR</h3>
+                        <h2 class="pixel-label">AVATAR</h2>
                         <div class="sprite-viewer">
-                            <button id="btn-left" class="arrow-btn" aria-label="Rotation gauche">◀</button>
                             <div class="sprite-frame">
-                                <img id="char-sprite" src="avatar1.gif" alt="Personnage">
+                                <img id="char-sprite" src="avatarface.png" alt="Avatar Baoussar Souhaib">
                             </div>
-                            <button id="btn-right" class="arrow-btn" aria-label="Rotation droite">▶</button>
                         </div>
-                        <p class="rotation-label">ROTATION</p>
                     </div>
+
                     <div class="char-stats-box">
                         <div class="stats-header">
-                            <div class="stat-row">
-                                <span class="label">NOM:</span>
-                                <span class="value">L'ARTISAN</span>
-                            </div>
-                            <div class="stat-row">
-                                <span class="label">CLASSE:</span>
-                                <span class="value highlight">DEV FULLSTACK</span>
-                            </div>
-                            <div class="stat-row">
-                                <span class="label">NIV:</span>
-                                <span class="value">99</span>
-                            </div>
+                            <div class="stat-row"><span class="label">NOM:</span><span class="value">Boussar Souhaib</span></div>
+                            <div class="stat-row"><span class="label">CLASSE:</span><span class="value highlight">DEBUTANT</span></div>
+                            <div class="stat-row"><span class="label">NIV:</span><span class="value">0.5</span></div>
                         </div>
                         <hr class="pixel-divider">
                         <div class="attributes-list">
                             <div class="attr-row">
                                 <span class="attr-name">HTML/CSS</span>
-                                <div class="attr-bar-container">
-                                    <div class="attr-bar-fill" style="width: 90%;"></div>
-                                </div>
+                                <div class="attr-bar-container"><div class="attr-bar-fill bar-html"></div></div>
                             </div>
                             <div class="attr-row">
-                                <span class="attr-name">JS</span>
-                                <div class="attr-bar-container">
-                                    <div class="attr-bar-fill" style="width: 85%;"></div>
-                                </div>
+                                <span class="attr-name">JAVASCRIPT</span>
+                                <div class="attr-bar-container"><div class="attr-bar-fill bar-js"></div></div>
                             </div>
                             <div class="attr-row">
-                                <span class="attr-name">DESIGN</span>
-                                <div class="attr-bar-container">
-                                    <div class="attr-bar-fill" style="width: 75%;"></div>
-                                </div>
+                                <span class="attr-name">CREATIVITE</span>
+                                <div class="attr-bar-container"><div class="attr-bar-fill bar-design"></div></div>
                             </div>
                             <div class="attr-row">
-                                <span class="attr-name">CAFÉINE</span>
-                                <div class="attr-bar-container">
-                                    <div class="attr-bar-fill mana" style="width: 100%;"></div>
-                                </div>
+                                <span class="attr-name">DETERMINE</span>
+                                <div class="attr-bar-container"><div class="attr-bar-fill mana bar-caffeine"></div></div>
                             </div>
                         </div>
-                        <div class="char-desc">
-                            <p>"Équipez-moi pour booster vos projets web. Bonus passif : Code Propre."</p>
+                        <div class="char-desc"><p>"Dans la vie, j'ai toujours eu l'habitude de m'adapter, me plaire lorsque je me crée un certain confort. Pourtant, pour la première fois, j'arpente un idéal que je m'étais toujours juré d'atteindre. J'ai toujours pris plaisir à écrire, à vouloir voir grand, et à me donner les moyens pour atteindre un sommet que j'ai longtemps admiré."</p></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div id="ancre-board" class="ghost-anchor"></div>
+        <section id="section-board" class="layer">
+            <div class="content-wrapper board-bg">
+                <div class="board-container">
+                    <h2 class="board-title">TABLEAU DES MISSIONS</h2>
+                    <div class="wooden-board">
+                        <div class="quest-paper pin-red">
+                            <div class="quest-header">
+                                <span class="quest-rank">RANG D</span>
+                                <span class="quest-status completed">COMPLÉTÉ</span>
+                            </div>
+                            <h3 class="quest-name">INITIATION</h3>
+                            <div class="quest-thumbnail scratch-thumb" role="img" aria-label="Aperçu du projet Scratch"></div>
+                            <p class="quest-desc">"Comprendre la logique des blocs pour animer le monde."</p>
+                            <div class="quest-loot">
+                                <p>RÉCOMPENSES :</p>
+                                <ul><li>+50 XP Logique</li><li>comp: Premier Code</li></ul>
+                            </div>
+                            <a href="#ancre-quest1" class="quest-btn">VOIR DÉTAILS</a>
+                        </div>
+
+                        <div class="quest-paper pin-blue">
+                            <div class="quest-header">
+                                <span class="quest-rank">RANG A</span>
+                                <span class="quest-status available">COMPLÉTÉ</span>
+                            </div>
+                            <h3 class="quest-name">LA PROMOTION</h3>
+                            <div class="quest-thumbnail cinema-thumb" role="img" aria-label="Aperçu du projet Cinéma"></div>
+                            <p class="quest-desc">"Mon plus beau chef d'oeuvre"</p>
+                            <div class="quest-loot">
+                                <p>RÉCOMPENSES :</p>
+                                <ul><li>+100 XP Créativité</li><li>Titre: Réalisateur</li></ul>
+                            </div>
+                            <a href="#ancre-quest2" class="quest-btn">VOIR DÉTAILS</a>
                         </div>
                     </div>
                 </div>
@@ -99,8 +119,8 @@
         <div id="ancre-quest1" class="ghost-anchor"></div>
         <section id="section-quest1" class="layer">
             <div class="content-wrapper scratch-bg">
-                <img src="scratch/main.png" class="hand-float left" alt="Main Gauche">
-                <img src="scratch/main2.png" class="hand-float right" alt="Main Droite">
+                <img src="scratch/main.png" class="hand-float left" alt="Main gauche">
+                <img src="scratch/main2.png" class="hand-float right" alt="Main droite">
 
                 <div class="orbit-system">
                     <div class="orbit-ring inner">
@@ -137,89 +157,114 @@
                 </div>
 
                 <div class="scratch-ui">
-                    <a href="https://scratch.mit.edu/projects/VOTRE_ID_PROJET/" target="_blank" rel="noopener noreferrer" class="warm-btn scratch-btn">LANCER LE JEU</a>
+                    <a href="https://scratch.mit.edu/projects/1073422345/" target="_blank" rel="noopener noreferrer" class="warm-btn scratch-btn">LANCER LE JEU</a>
                 </div>
             </div>
         </section>
 
-<div id="ancre-quest2" class="ghost-anchor"></div>
-<section id="section-quest2" class="layer theme-cinema">
-    <div class="content-wrapper cinema-bg">
-        <div class="ceiling-light"></div>
+        <div id="ancre-quest2" class="ghost-anchor"></div>
+        <section id="section-quest2" class="layer theme-cinema">
+            <div class="content-wrapper cinema-bg">
+                <div class="ceiling-light"></div>
 
-        <div class="cinema-header">
-            <h2 class="cinema-title">LA PROMOTION</h2>
-            <p class="cinema-subtitle">"La partie n'est jamais celle qu'on pense jouer"</p>
-            <a href="#" class="cinema-btn" id="watch-btn">REGARDER</a>
-        </div>
+                <div class="cinema-header">
+                    <h2 class="cinema-title">LA PROMOTION</h2>
+                    <p class="cinema-subtitle">"La partie n'est jamais celle qu'on pense jouer"</p>
+                    <p class="cinema-subtitle">"Mon deuxième court métrage en MMI..."</p>
+                    <a href="#" class="cinema-btn" id="watch-btn">REGARDER</a>
+                </div>
 
-        <div class="chess-marionettes">
-            <div class="string left-string"><div class="pawn"></div></div>
-            <div class="string right-string"><div class="pawn"></div></div>
-        </div>
+                <div class="chess-marionettes">
+                    <div class="string left-string"><div class="pawn"></div></div>
+                    <div class="string right-string"><div class="pawn"></div></div>
+                </div>
 
-        <div class="promo-characters">
-            <div class="char-wrapper left">
-                <img src="promotion/ellande1.png" class="char-film" alt="Ellande">
+                <div class="promo-characters">
+                    <div class="char-wrapper left">
+                        <img src="promotion/ellande1.png" class="char-film" alt="Ellande">
+                    </div>
+                    <div class="char-wrapper right">
+                        <img src="promotion/jessy1.png" class="char-film" alt="Jessy">
+                    </div>
+                </div>
+                
+                <div class="film-grain"></div>
             </div>
-            <div class="char-wrapper right">
-                <img src="promotion/jessy1.png" class="char-film" alt="Jessy">
-            </div>
-        </div>
-    </div>
-</section>
+        </section>
 
         <div id="ancre-contact" class="ghost-anchor"></div>
         <section id="section-contact" class="layer">
             <div class="content-wrapper contact-bg">
-                <div class="paper-letter">
-                    <h2>ENVOYER UNE LETTRE</h2>
-                    <form id="contact-form">
-                        <input type="email" id="email" name="email" placeholder="Votre adresse courriel" required>
-                        <textarea id="message" name="message" placeholder="Votre message..." rows="4" required></textarea>
-                        <button type="submit" class="warm-btn">POSTER</button>
-                    </form>
-                    <div id="form-message" class="form-feedback"></div>
+                <div class="letter-container">
+                    <div class="wax-seal"></div>
+                    <div class="parchment">
+                        <h2 class="letter-title">LA GUILDE DES MESSAGERS</h2>
+                        <p class="letter-subtitle">Une proposition ? Une quête ? Écrivez-moi.</p>
+                        
+                        <form id="contact-form" action="https://formspree.io/f/VOTRE_CODE_ICI" method="POST">
+                            <div class="input-group">
+                                <label for="email">VOTRE ADRESSE (EMAIL)</label>
+                                <input type="email" id="email" name="email" placeholder="aventurier@domaine.com" required>
+                                <span class="ink-bar"></span>
+                            </div>
+                            <div class="input-group">
+                                <label for="message">VOTRE MISSIVE</label>
+                                <textarea id="message" name="message" placeholder="J'ai une quête pour vous..." rows="5" required></textarea>
+                                <span class="ink-bar"></span>
+                            </div>
+                            <button type="submit" class="stamp-btn">
+                                <span class="btn-text">SCELLER & ENVOYER</span>
+                            </button>
+                        </form>
+
+                        <div id="form-message" class="form-feedback"></div>
+                    </div>
                 </div>
-                <footer>© 2024 - Fait avec passion.</footer>
+                <footer>© 2024 - Fait avec passion & pixel art.</footer>
             </div>
         </section>
 
     </main>
 
     <script>
-        // Désactiver la restauration automatique du scroll
         if ('scrollRestoration' in history) { 
             history.scrollRestoration = 'manual'; 
         }
         window.scrollTo(0, 0);
         
+        // --- ROTATION AVATAR ---
+        const charSprite = document.getElementById('char-sprite');
+        const sprites = ['avatarface.png', 'avatardroite.png', 'avatardos.png', 'avatargauche.png'];
+        let currentSpriteIndex = 0;
+        
+        function autoRotate() {
+            currentSpriteIndex = (currentSpriteIndex + 1) % sprites.length;
+            charSprite.src = sprites[currentSpriteIndex];
+        }
+        setInterval(autoRotate, 700);
+        
         document.addEventListener("DOMContentLoaded", () => {
-            // ===== INTRO (4.8s) =====
-            setTimeout(() => { 
-                document.body.classList.remove('intro'); 
-            }, 4800);
+            setTimeout(() => { document.body.classList.remove('intro'); }, 4800);
 
-            // ===== NAVIGATION FLUIDE (CLICK) =====
+            // Nav Click
             document.querySelectorAll('.nav-link').forEach(link => {
                 link.addEventListener('click', function(e) {
                     e.preventDefault();
                     document.querySelectorAll('.nav-link').forEach(l => l.classList.remove('active'));
                     this.classList.add('active');
-
                     const targetId = this.getAttribute('href');
                     const targetElement = document.querySelector(targetId);
-                    
                     if(targetElement){
                         targetElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
                     }
                 });
             });
 
-            // ===== SURBRILLANCE AU SCROLL =====
+            // Scroll Spy
             const anchors = [
                 { id: 'ancre-home', navId: 'nav-home' },
                 { id: 'ancre-about', navId: 'nav-about' },
+                { id: 'ancre-board', navId: 'nav-quests' },
                 { id: 'ancre-quest1', navId: 'nav-quests' },
                 { id: 'ancre-quest2', navId: 'nav-quests' },
                 { id: 'ancre-contact', navId: 'nav-contact' }
@@ -228,19 +273,15 @@
             function updateActiveNav() {
                 let current = '';
                 const scrollPosition = window.scrollY + (window.innerHeight / 3);
-
                 anchors.forEach(anchorObj => {
                     const element = document.getElementById(anchorObj.id);
                     if (element && element.offsetTop <= scrollPosition) {
                         current = anchorObj.navId;
                     }
                 });
-
-                // Si on est en bas de page, forcer le contact
                 if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight - 50) {
                     current = 'nav-contact';
                 }
-
                 document.querySelectorAll('.nav-link').forEach(link => {
                     link.classList.remove('active');
                     if (link.id === current) {
@@ -249,148 +290,57 @@
                 });
             }
 
-            // Throttle pour optimiser les performances
             let scrollTimeout;
             window.addEventListener('scroll', () => {
-                if (scrollTimeout) {
-                    window.cancelAnimationFrame(scrollTimeout);
-                }
+                if (scrollTimeout) window.cancelAnimationFrame(scrollTimeout);
                 scrollTimeout = window.requestAnimationFrame(() => {
                     updateActiveNav();
-                    
-                    // Animations In-Page
                     const quest1 = document.getElementById('ancre-quest1');
                     const quest2 = document.getElementById('ancre-quest2');
-                    
                     if (quest1 && window.scrollY >= quest1.offsetTop - 400) {
                         const titleEl = document.getElementById('magnet-title');
-                        if (titleEl && !titleEl.classList.contains('assembled')) {
-                            titleEl.classList.add('assembled');
-                        }
+                        if (titleEl && !titleEl.classList.contains('assembled')) titleEl.classList.add('assembled');
                     }
-                    
                     if (quest2 && window.scrollY >= quest2.offsetTop - 400) {
                         const wrapperEl = document.querySelector('#section-quest2 .content-wrapper');
-                        if (wrapperEl && !wrapperEl.classList.contains('start-anim')) {
-                            wrapperEl.classList.add('start-anim');
-                        }
+                        if (wrapperEl && !wrapperEl.classList.contains('start-anim')) wrapperEl.classList.add('start-anim');
                     }
                 });
             });
-
-            // Appel initial
             updateActiveNav();
 
-            // ===== SPRITE ROTATION SYSTEM =====
-            const charSprite = document.getElementById('char-sprite');
-            const btnLeft = document.getElementById('btn-left');
-            const btnRight = document.getElementById('btn-right');
-            
-            // Définir les sprites (remplace par tes vraies images)
-            const sprites = [
-                'avatar1.gif',      // Vue de face
-                'avatar-right.jpg',   // Vue de droite (si tu as)
-                'avatar-back.jpg',    // Vue de dos (si tu as)
-                'avatar-left.jpg'     // Vue de gauche (si tu as)
-            ];
-            
-            let currentSpriteIndex = 0;
-            
-            function updateSprite() {
-                // Vérifier que l'image existe, sinon garder la première
-                const img = new Image();
-                img.onerror = () => {
-                    charSprite.src = sprites[0];
-                };
-                img.onload = () => {
-                    charSprite.src = sprites[currentSpriteIndex];
-                };
-                img.src = sprites[currentSpriteIndex];
-                
-                // Flip horizontal pour le dernier sprite
-                if (currentSpriteIndex === 3) {
-                    charSprite.style.transform = "scaleX(-1)";
-                } else {
-                    charSprite.style.transform = "scaleX(1)";
-                }
-            }
-            
-            if(btnRight) {
-                btnRight.addEventListener('click', () => {
-                    currentSpriteIndex++;
-                    if (currentSpriteIndex >= sprites.length) currentSpriteIndex = 0;
-                    updateSprite();
-                });
-            }
-            
-            if(btnLeft) {
-                btnLeft.addEventListener('click', () => {
-                    currentSpriteIndex--;
-                    if (currentSpriteIndex < 0) currentSpriteIndex = sprites.length - 1;
-                    updateSprite();
-                });
-            }
-
-            // ===== BOUTON REGARDER (CINEMA) =====
             const watchBtn = document.getElementById('watch-btn');
             if (watchBtn) {
                 watchBtn.addEventListener('click', (e) => {
                     e.preventDefault();
-                    // Remplace par l'URL de ta vidéo ou ton projet
-                    const videoUrl = 'https://www.youtube.com/watch?v=wApGhhCeJzA';
-                    window.open(videoUrl, '_blank');
+                    window.open('https://www.youtube.com/watch?v=VOTRE_VIDEO_ID', '_blank');
                 });
             }
 
-            // ===== FORMULAIRE DE CONTACT =====
             const contactForm = document.getElementById('contact-form');
             const formMessage = document.getElementById('form-message');
-            
             if (contactForm) {
                 contactForm.addEventListener('submit', async (e) => {
                     e.preventDefault();
-                    
                     const email = document.getElementById('email').value;
-                    const message = document.getElementById('message').value;
-                    
-                    // Afficher un message de chargement
-                    formMessage.textContent = 'Envoi en cours...';
-                    formMessage.className = 'form-feedback loading';
-                    
-                    // Simulation d'envoi (remplace par ton backend)
-                    setTimeout(() => {
-                        // Succès simulé
-                        formMessage.textContent = '✓ Message envoyé avec succès !';
-                        formMessage.className = 'form-feedback success';
-                        contactForm.reset();
-                        
-                        // Cache le message après 5 secondes
-                        setTimeout(() => {
-                            formMessage.textContent = '';
-                            formMessage.className = 'form-feedback';
-                        }, 5000);
-                    }, 1500);
-                    
-                    /* POUR UN VRAI ENVOI, utilise quelque chose comme :
-                    try {
-                        const response = await fetch('ton-api-endpoint.php', {
-                            method: 'POST',
-                            headers: { 'Content-Type': 'application/json' },
-                            body: JSON.stringify({ email, message })
-                        });
-                        
-                        if (response.ok) {
-                            formMessage.textContent = '✓ Message envoyé !';
-                            formMessage.className = 'form-feedback success';
-                            contactForm.reset();
-                        } else {
-                            throw new Error('Erreur serveur');
-                        }
-                    } catch (error) {
-                        formMessage.textContent = '✗ Erreur lors de l\'envoi. Réessayez.';
-                        formMessage.className = 'form-feedback error';
+                    const msg = document.getElementById('message').value;
+                    if(email === "" || msg === "") {
+                        formMessage.textContent = "⚠ L'encre est invisible... Remplissez tout !";
+                        formMessage.className = "form-feedback error-msg";
+                        return;
                     }
-                    */
+                    const btn = contactForm.querySelector('button');
+                    const originalText = btn.innerHTML;
+                    btn.innerHTML = "<span class='btn-text'>SCELLEMENT EN COURS...</span>";
+                    btn.style.opacity = "0.7";
+                    setTimeout(() => {
+                        formMessage.textContent = "✓ Missive envoyée au maître de la guilde !";
+                        formMessage.className = "form-feedback success-msg";
+                        contactForm.reset();
+                        btn.innerHTML = originalText;
+                        btn.style.opacity = "1";
+                        setTimeout(() => { formMessage.textContent = ""; }, 5000);
+                    }, 2000);
                 });
             }
         });
