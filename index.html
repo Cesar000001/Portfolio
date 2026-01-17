@@ -324,7 +324,7 @@
                     const email = document.getElementById('email').value;
                     const msg = document.getElementById('message').value;
                     if(email === "" || msg === "") {
-                        formMessage.textContent = "⚠ L'encre est invisible... Remplissez tout !";
+                        formMessage.textContent = "L'encre est invisible...";
                         formMessage.className = "form-feedback error-msg";
                         return;
                     }
@@ -333,7 +333,7 @@
                     btn.innerHTML = "<span class='btn-text'>SCELLEMENT EN COURS...</span>";
                     btn.style.opacity = "0.7";
                     setTimeout(() => {
-                        formMessage.textContent = "✓ Missive envoyée au maître de la guilde !";
+                        formMessage.textContent = "Missive envoyée";
                         formMessage.className = "form-feedback success-msg";
                         contactForm.reset();
                         btn.innerHTML = originalText;
