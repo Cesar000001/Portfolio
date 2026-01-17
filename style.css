@@ -1,4 +1,3 @@
-/* --- CONFIGURATION GLOBALE --- */
 :root {
     --wood-dark: #5d4037;
     --wood-light: #8d6e63;
@@ -29,7 +28,7 @@ body {
     min-height: 100vh;
 }
 
-/* --- NAVBAR --- */
+
 .warm-nav {
     position: fixed; top: 0; width: 100%; z-index: 1000;
     padding: 25px 0; background: transparent; transition: opacity 2s ease;
@@ -46,10 +45,10 @@ body {
     width: 80%; height: 3px; background-color: var(--gold); box-shadow: 0 0 10px var(--gold);
 }
 
-/* --- ANCRES FANTÔMES --- */
+
 .ghost-anchor { position: relative; width: 100%; height: 1px; visibility: hidden; margin-top: -1px; }
 
-/* --- STICKY LAYERS --- */
+
 main { position: relative; width: 100%; }
 .layer {
     position: -webkit-sticky; position: sticky; top: 0; height: 130vh; width: 100%;
@@ -69,19 +68,19 @@ main { position: relative; width: 100%; }
 #section-quest2 { z-index: 40; } 
 #section-contact{ z-index: 100; } 
 
-/* --- 1. ACCUEIL --- */
+
 .home-bg { background-image: url('soleil.jpg'); image-rendering: pixelated; background-color: #1a120b; }
 .center-content { text-align: center; position: relative; z-index: 10; }
 .cozy-title {
     font-family: 'Press Start 2P'; font-size: clamp(5rem, 9vw, 12rem); color: var(--paper);
     text-shadow: 4px 4px 0 #3e2723; margin-bottom: 20px; display: flex; align-items: center; justify-content: center; flex-wrap: wrap; gap: 10px;
 }
-/* AMPOULE */
+
 .pixel-bulb {
     --wire-len: 50vh; position: relative; display: inline-block; margin: 0 45px; padding: 20px 15px 5px 15px;
     background: var(--gold); color: var(--text-dark); border-radius: 4px; border: 6px solid var(--wood-dark);
     box-shadow: 0 0 30px var(--gold); transform-origin: 50% calc(-1 * var(--wire-len));
-    /* Séquence complète restaurée */
+
     animation: bulb-swing 3s ease-in-out infinite alternate, bulb-flicker 3s infinite, intro-sequence 5s forwards;
     z-index: 20;
 }
@@ -116,7 +115,7 @@ body.intro .warm-nav, body.intro .rpg-interface, body.intro .board-container, bo
 body.intro .black-curtain { opacity: 1; pointer-events: auto; }
 body.intro .cozy-title { color: transparent; text-shadow: none; }
 
-/* --- 2. PERSONNAGE --- */
+
 .about-bg {
     background-image: url('midi.jpg'); image-rendering: pixelated;
     background-size: cover;
@@ -154,7 +153,7 @@ body.intro .cozy-title { color: transparent; text-shadow: none; }
 .char-desc p { margin: 0; }
 .bar-html { width: 50%; } .bar-js { width: 20%; } .bar-design { width: 100%; } .bar-caffeine { width: 200%; }
 
-/* --- 2.5 TABLEAU DE QUÊTES --- */
+
 .board-bg {
     background-image: url('nuit.jpg'); image-rendering: pixelated;
 }
@@ -198,7 +197,7 @@ body.intro .cozy-title { color: transparent; text-shadow: none; }
 }
 .quest-btn:hover { background: var(--gold); color: var(--wood-dark); }
 
-/* --- 3. SCRATCH --- */
+
 .scratch-bg { background-color: #000; background-image: url('scratch/ciel pixel.png'); background-size: cover; background-position: center; }
 .scratch-header { position: relative; z-index: 10; margin-bottom: 50px; text-align: center; }
 .scratch-title { font-family: 'Press Start 2P'; font-size: clamp(2rem, 8vw, 4rem); color: #fff; text-shadow: 4px 4px 0 #4c97ff; display: flex; justify-content: center; gap: clamp(5px, 2vw, 10px); pointer-events: none; flex-wrap: wrap; }
@@ -226,7 +225,7 @@ body.intro .cozy-title { color: transparent; text-shadow: none; }
 .warm-btn:hover { transform: translateY(-2px); box-shadow: 5px 7px 0 rgba(62, 39, 35, 0.5); background: #ffe082; }
 .warm-btn:active { transform: translateY(0); box-shadow: 2px 2px 0 rgba(62, 39, 35, 0.5); }
 
-/* --- 4. THÈME CINÉMA (ALIGNEMENT & RESPONSIVE) --- */
+
 .cinema-bg { background-color: #050505; position: relative; overflow: hidden; background-image: none; }
 .cinema-header { position: relative; z-index: 20; text-align: center; margin-top: 5vh; opacity: 0; transform: translateY(-30px); transition: all 1s ease-out; padding: 0 15px; }
 .start-anim .cinema-header { opacity: 1; transform: translateY(0); }
@@ -240,7 +239,7 @@ body.intro .cozy-title { color: transparent; text-shadow: none; }
 .pawn { position: absolute; bottom: 0; left: -14px; width: clamp(20px, 3vw, 40px); height: clamp(35px, 5vw, 60px); background: #fff; clip-path: polygon(30% 0%, 70% 0%, 70% 20%, 90% 30%, 90% 40%, 60% 50%, 80% 80%, 80% 90%, 100% 100%, 0% 100%, 20% 90%, 20% 80%, 40% 50%, 10% 40%, 10% 30%, 30% 20%); box-shadow: 0 0 15px rgba(255,255,255,0.8); }
 @keyframes puppetString { from { transform: translateY(0); } to { transform: translateY(40px); } }
 
-/* ALIGNEMENT PERSONNAGES SOUS PIONS */
+
 .promo-characters {
     position: absolute; bottom: 40; left: 0; width: 100%; height: 105%; pointer-events: auto; z-index: 10;
     display: flex; justify-content: center; align-items: flex-end; padding-bottom: 5vh;
@@ -259,7 +258,7 @@ body.intro .cozy-title { color: transparent; text-shadow: none; }
 .ceiling-light { position: absolute; top: -10%; left: 50%; transform: translateX(-50%); width: 80%; height: 80%; background: radial-gradient(ellipse at top, rgba(255, 255, 255, 0.08) 0%, transparent 70%); pointer-events: none; z-index: 1; opacity: 0.6; transition: opacity 1s 1s; }
 .start-anim .ceiling-light { opacity: 1; }
 
-/* --- 5. CONTACT --- */
+
 .contact-bg {
     background-color: #2b1d16;
     background-image: repeating-linear-gradient(45deg, #2b1d16 0, #2b1d16 20px, #241812 20px, #241812 40px);
@@ -300,13 +299,10 @@ input:focus, textarea:focus { border-bottom-color: transparent; }
 .error-msg { color: #c0392b; font-weight: bold; }
 footer { width: 100%; text-align: center; padding: 20px; margin-top: 50px; color: rgba(255,255,255,0.4); font-size: 0.9rem; }
 
-/* ==========================================================================
-   === RESPONSIVE MOBILE FINAL (CORRECTION TITRES & CENTRAGE) ===
-   ========================================================================== */
 
 @media (max-width: 900px) {
     
-    /* --- 1. GLOBAL (Layout) --- */
+
     .layer, .content-wrapper {
         position: relative !important;
         height: auto !important;
@@ -315,27 +311,26 @@ footer { width: 100%; text-align: center; padding: 20px; margin-top: 50px; color
         padding: 0 !important;
     }
     
-    /* Exception Accueil : Centré */
+
     #section-home .content-wrapper { justify-content: center !important; }
 
-    /* --- 2. SCRATCH (CORRECTION SPÉCIFIQUE) --- */
+
     
-    /* On force la section Scratch à faire exactement la taille de l'écran (pas de scroll) */
     #section-quest1.layer, 
     #section-quest1 .content-wrapper {
         height: 100vh !important;
         overflow: hidden !important;
     }
 
-    /* Le Header (Titre + Sous-titre) */
+
     .scratch-header {
         position: absolute;
-        top: 10%; /* On le place bien haut */
-        left: 50%; /* On le place au milieu */
-        transform: translateX(-50%); /* On le centre mathématiquement */
+        top: 10%; 
+        left: 50%;
+        transform: translateX(-50%); 
         width: 100%;
         padding: 0 10px;
-        z-index: 50; /* Il passe PAR DESSUS les blocs */
+        z-index: 50;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -345,14 +340,14 @@ footer { width: 100%; text-align: center; padding: 20px; margin-top: 50px; color
     .scratch-title {
         display: flex;
         justify-content: center;
-        flex-wrap: wrap; /* Permet aux lettres de passer à la ligne si écran minuscule */
+        flex-wrap: wrap;
         width: 100%;
-        margin-bottom: 15px; /* Espace sous le titre */
+        margin-bottom: 15px; 
     }
 
-    /* On réduit un peu la taille des lettres du titre sur mobile */
+ 
     .scratch-title .letter {
-        font-size: 2.2rem; /* Taille adaptée mobile */
+        font-size: 2.2rem; 
     }
 
     .scratch-subtitle {
@@ -360,33 +355,33 @@ footer { width: 100%; text-align: center; padding: 20px; margin-top: 50px; color
         color: #ffab19;
         text-align: center;
         width: 100%;
-        background: rgba(0,0,0,0.5); /* Petit fond noir pour la lisibilité si un bloc passe derrière */
+        background: rgba(0,0,0,0.5);
         padding: 5px 10px;
         border-radius: 4px;
     }
 
-    /* L'Animation (Système solaire) */
+
     .orbit-system {
-        top: 55%; /* On la descend plus bas pour dégager le titre */
+        top: 55%;
         left: 50%;
-        transform: translate(-50%, -50%) scale(0.45); /* On la réduit */
+        transform: translate(-50%, -50%) scale(0.45);
     }
 
-    /* Les Mains */
+
     .hand-float {
-        top: 55%; /* Alignées avec le système */
+        top: 55%; 
         width: 70px;
     }
     .hand-float.left { left: -10px; }
     .hand-float.right { right: -10px; }
 
-    /* Le Bouton */
+
     .scratch-ui {
-        bottom: 12%; /* Un peu plus haut que le bas absolu */
+        bottom: 12%; 
     }
 
 
-    /* --- 3. AUTRES PAGES (Standards) --- */
+
     .warm-nav { padding: 10px 0; background: rgba(0,0,0,0.95); }
     .warm-nav ul { gap: 15px; flex-wrap: wrap; }
     .warm-nav a { font-size: 0.7rem; }
@@ -400,7 +395,6 @@ footer { width: 100%; text-align: center; padding: 20px; margin-top: 50px; color
     .wooden-board { margin-top: 80px; padding: 30px 15px; flex-direction: column; gap: 30px; }
     .quest-paper { width: 100%; transform: rotate(0deg) !important; margin: 0; }
 
-    /* --- 4. CINÉMA (Mobile) --- */
     #section-quest2.layer, #section-quest2 .content-wrapper {
         height: 100vh !important; overflow: hidden; justify-content: center; padding-top: 0 !important;
     }
@@ -414,12 +408,11 @@ footer { width: 100%; text-align: center; padding: 20px; margin-top: 50px; color
     .char-wrapper.left { left: 15%; bottom: 0; transform: translateX(-50%); }
     .char-wrapper.right { right: 15%; bottom: 0; transform: translateX(50%) scaleX(-1); }
     
-    /* --- 5. CONTACT --- */
+
     .content-wrapper.contact-bg { justify-content: center; }
     .paper-content { transform: rotate(0deg); width: 95%; }
 }
 
-/* Ajustement iPhone SE / Ecrans très étroits */
 @media (max-width: 380px) {
     .scratch-title .letter { font-size: 1.8rem; }
     .scratch-subtitle { font-size: 0.8rem; }
