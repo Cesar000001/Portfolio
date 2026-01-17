@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolio interactif de L'Artisan, Développeur Fullstack créatif.">
-    <title>Portfolio Cosy Lumineux | Développeur Fullstack</title>
+    <meta name="description" content="Portfolio de Baoussar Souhaib - Développeur amateur, projet court métrage, scratch, MMI.">
+    <title>Portfolio Baoussar Souhaib</title>
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&family=Anton&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -170,7 +170,7 @@
                 <div class="cinema-header">
                     <h2 class="cinema-title">LA PROMOTION</h2>
                     <p class="cinema-subtitle">"La partie n'est jamais celle qu'on pense jouer"</p>
-                    <p class="cinema-subtitle">"Mon deuxième court métrage en MMI..."</p>
+                    <p class="cinema-subtitle">"Mon deuxième court-métrage en MMI, et l'une de mes plus grandes fiertés."</p>
                     <a href="#" class="cinema-btn" id="watch-btn">REGARDER</a>
                 </div>
 
@@ -204,7 +204,7 @@
                         <form id="contact-form" action="https://formspree.io/f/VOTRE_CODE_ICI" method="POST">
                             <div class="input-group">
                                 <label for="email">VOTRE ADRESSE (EMAIL)</label>
-                                <input type="email" id="email" name="email" placeholder="aventurier@domaine.com" required>
+                                <input type="email" id="email" name="email" placeholder="aventurier@gmail.com" required>
                                 <span class="ink-bar"></span>
                             </div>
                             <div class="input-group">
@@ -220,7 +220,6 @@
                         <div id="form-message" class="form-feedback"></div>
                     </div>
                 </div>
-                <footer>© 2024 - Fait avec passion & pixel art.</footer>
             </div>
         </section>
 
@@ -232,7 +231,6 @@
         }
         window.scrollTo(0, 0);
         
-        // --- ROTATION AVATAR ---
         const charSprite = document.getElementById('char-sprite');
         const sprites = ['avatarface.png', 'avatardroite.png', 'avatardos.png', 'avatargauche.png'];
         let currentSpriteIndex = 0;
@@ -246,7 +244,6 @@
         document.addEventListener("DOMContentLoaded", () => {
             setTimeout(() => { document.body.classList.remove('intro'); }, 4800);
 
-            // Nav Click
             document.querySelectorAll('.nav-link').forEach(link => {
                 link.addEventListener('click', function(e) {
                     e.preventDefault();
@@ -260,7 +257,6 @@
                 });
             });
 
-            // Scroll Spy
             const anchors = [
                 { id: 'ancre-home', navId: 'nav-home' },
                 { id: 'ancre-about', navId: 'nav-about' },
@@ -295,12 +291,15 @@
                 if (scrollTimeout) window.cancelAnimationFrame(scrollTimeout);
                 scrollTimeout = window.requestAnimationFrame(() => {
                     updateActiveNav();
+                    
                     const quest1 = document.getElementById('ancre-quest1');
                     const quest2 = document.getElementById('ancre-quest2');
+                    
                     if (quest1 && window.scrollY >= quest1.offsetTop - 400) {
                         const titleEl = document.getElementById('magnet-title');
                         if (titleEl && !titleEl.classList.contains('assembled')) titleEl.classList.add('assembled');
                     }
+                    
                     if (quest2 && window.scrollY >= quest2.offsetTop - 400) {
                         const wrapperEl = document.querySelector('#section-quest2 .content-wrapper');
                         if (wrapperEl && !wrapperEl.classList.contains('start-anim')) wrapperEl.classList.add('start-anim');
@@ -313,7 +312,7 @@
             if (watchBtn) {
                 watchBtn.addEventListener('click', (e) => {
                     e.preventDefault();
-                    window.open('https://www.youtube.com/watch?v=VOTRE_VIDEO_ID', '_blank');
+                    window.open('https://youtu.be/wApGhhCeJzA?si=tRLAfLyXEGLHSsvU', '_blank');
                 });
             }
 
